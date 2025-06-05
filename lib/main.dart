@@ -18,15 +18,48 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red,
       ),
       body: Center(
-        child: Icon(
-          Icons.airport_shuttle_rounded,
-          color: Colors.red,
-          size: 49.0,
-        )
+        // Buttons
+        // child: ElevatedButton(
+        //   onPressed: (){},
+        //    style: ElevatedButton.styleFrom(
+        //     backgroundColor: Colors.blue[900],
+        //     foregroundColor: Colors.white,
+        //       ),
+        //   child: Text('Click Me')
+        //   )
+
+        // Icon on button
+        // child: ElevatedButton.icon(
+        //   onPressed: (){}, 
+        //   label: Text('Hey Yoo'),
+        //   style: ElevatedButton.styleFrom(
+        //     backgroundColor: Colors.amber,
+        //     foregroundColor: Colors.black,
+        //   ),
+        //   icon: Icon(
+        //     Icons.mail,
+        //   ),
+        //   ),
+
+        // Icons
+        child: IconButton(
+          onPressed: (){
+            print('YEPPPP');
+          },
+          style: IconButton.styleFrom(
+            backgroundColor: Colors.black,
+          ),
+         icon: Icon(
+          Icons.dangerous,
+         ),
+         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: (){},
-        backgroundColor: Colors.green,
+        onPressed: (){
+          print('How did I get here');
+        },
+        backgroundColor: Colors.white,
+        foregroundColor: Colors.black,
         child: Text('DONT'),
       ),
     );
