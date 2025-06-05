@@ -15,44 +15,54 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         title: Text('rres'),
         centerTitle: true,
-        backgroundColor: Colors.red,
+        backgroundColor: const Color.fromARGB(255, 224, 44, 31),
       ),
-      body: Center(
-        // Buttons
-        // child: ElevatedButton(
-        //   onPressed: (){},
-        //    style: ElevatedButton.styleFrom(
-        //     backgroundColor: Colors.blue[900],
-        //     foregroundColor: Colors.white,
-        //       ),
-        //   child: Text('Click Me')
-        //   )
-
-        // Icon on button
-        // child: ElevatedButton.icon(
-        //   onPressed: (){}, 
-        //   label: Text('Hey Yoo'),
-        //   style: ElevatedButton.styleFrom(
-        //     backgroundColor: Colors.amber,
-        //     foregroundColor: Colors.black,
-        //   ),
-        //   icon: Icon(
-        //     Icons.mail,
-        //   ),
-        //   ),
-
-        // Icons
-        child: IconButton(
-          onPressed: (){
-            print('YEPPPP');
-          },
-          style: IconButton.styleFrom(
-            backgroundColor: Colors.black,
+      // body: Row(
+      //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      //   crossAxisAlignment: CrossAxisAlignment.center,
+      //   children: <Widget>[
+      //     Text('DON\'T'),
+      //     ElevatedButton(
+      //       onPressed: (){}, 
+      //       style: TextButton.styleFrom(
+      //         backgroundColor: Colors.deepOrange,
+      //       ),
+      //       child: Text('CLICK Me')
+      //       ),
+      //       Container(
+      //         color: Colors.blueAccent,
+      //         padding: EdgeInsets.all(10),
+      //         margin: EdgeInsets.fromLTRB(2, 3, 5, 3),
+      //         child: Text('PLEASE!!!'),
+      //       ),
+      //   ],
+      // ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: <Widget>[
+          Row(
+            children: <Widget>[
+              Text('LLSK'),
+              Text("HEYE")
+            ],
           ),
-         icon: Icon(
-          Icons.dangerous,
-         ),
-         ),
+          Container(
+            padding: EdgeInsets.all(30),
+            color: Colors.green,
+            child: Text('ONE'),
+          ),
+           Container(
+            padding: EdgeInsets.all(30),
+            color: Colors.white,
+            child: Text('TWO'),
+          ),
+           Container(
+            padding: EdgeInsets.all(30),
+            color: Colors.orange[900],
+            child: Text('THREE'),
+          ),
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: (){
