@@ -18,9 +18,7 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red,
       ),
       body: Center(
-        child: Image(
-          image: AssetImage('assets/cat3.jpeg'),
-        )
+        child: Image.network('https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg')
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: (){},
