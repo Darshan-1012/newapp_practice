@@ -17,50 +17,35 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: const Color.fromARGB(255, 224, 44, 31),
       ),
-      // body: Row(
-      //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      //   crossAxisAlignment: CrossAxisAlignment.center,
-      //   children: <Widget>[
-      //     Text('DON\'T'),
-      //     ElevatedButton(
-      //       onPressed: (){}, 
-      //       style: TextButton.styleFrom(
-      //         backgroundColor: Colors.deepOrange,
-      //       ),
-      //       child: Text('CLICK Me')
-      //       ),
-      //       Container(
-      //         color: Colors.blueAccent,
-      //         padding: EdgeInsets.all(10),
-      //         margin: EdgeInsets.fromLTRB(2, 3, 5, 3),
-      //         child: Text('PLEASE!!!'),
-      //       ),
-      //   ],
-      // ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.end,
+      body: Row(
         children: <Widget>[
-          Row(
-            children: <Widget>[
-              Text('LLSK'),
-              Text("HEYE")
-            ],
+          Expanded(
+              child: Image.asset('assets/cat1.jpeg'),
+            flex: 3,
+            ),
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: EdgeInsets.all(30),
+              color: Colors.lightBlue,
+              child: Text('1'),
+            ),
           ),
-          Container(
-            padding: EdgeInsets.all(30),
-            color: Colors.green,
-            child: Text('ONE'),
+          Expanded(
+            flex: 1,
+            child: Container(
+               padding: EdgeInsets.all(30),
+              color: Colors.pink,
+              child: Text('2'),
+            ),
           ),
-           Container(
-            padding: EdgeInsets.all(30),
-            color: Colors.white,
-            child: Text('TWO'),
-          ),
-           Container(
-            padding: EdgeInsets.all(30),
-            color: Colors.orange[900],
-            child: Text('THREE'),
+          Expanded(
+            flex: 1,
+            child: Container(
+               padding: EdgeInsets.all(30),
+              color: Colors.amber,
+              child: Text('3'),
+            ),
           ),
         ],
       ),
